@@ -9,9 +9,6 @@ class BoostMathConan(ConanFile):
     license = "www.boost.org/users/license.html"
     requires =  "Boost.Level8Group/1.64.0@bincrafters/testing"
    
-    def package_id(self):
-        self.info.header_only()
-        
     #This library is part of one or more cyclic dependency groups within Boost.
     
     #All members of cyclic dependency groups must be built under single package per group for Conan.
