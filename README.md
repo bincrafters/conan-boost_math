@@ -2,7 +2,7 @@
 
 [Conan.io](https://conan.io) package for [Boost.Math](https://github.com/Boostorg/Math) project
 
-The packages generated with this **conanfile** can be found in [Bintray](https://bintray.com/bincrafters/conan-public/Boost.Math%3Abincrafters).
+The packages generated with this **conanfile** can be found in [Bintray](https://bintray.com/bincrafters/public-conan/Boost.Math%3Abincrafters).
 
 ## For Users: Use this package
 
