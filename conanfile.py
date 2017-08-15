@@ -3,8 +3,8 @@ from conans import ConanFile, tools, os
 class BoostMathConan(ConanFile):
     name = "Boost.Math"
     version = "1.64.0"
-    generators = "txt"
-    url = "https://github.com/boostorg/math"
+    url = "https://github.com/bincrafters/conan-boost-math"
+    source_url = "https://github.com/boostorg/math"
     description = "Please visit http://www.boost.org/doc/libs/1_64_0/libs/libraries.htm"
     license = "www.boost.org/users/license.html"
     requires =  "Boost.Level8Group/1.64.0@bincrafters/testing"
