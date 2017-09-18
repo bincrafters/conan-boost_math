@@ -2,12 +2,12 @@ from conans import ConanFile, tools, os
 
 class BoostMathConan(ConanFile):
     name = "Boost.Math"
-    version = "1.64.0"
+    version = "1.65.0"
     short_paths = True
     url = "https://github.com/bincrafters/conan-boost-math"
-    description = "Please visit http://www.boost.org/doc/libs/1_64_0/libs/libraries.htm"
+    description = "Please visit http://www.boost.org/doc/libs/1_65_0/libs/libraries.htm"
     license = "www.boost.org/users/license.html"
-    requires =  "Boost.Level8Group/1.64.0@bincrafters/testing"
+    requires =  "Boost.Level8Group/1.65.0@bincrafters/testing"
    
     #This library is part of one or more cyclic dependency groups within Boost.
     
