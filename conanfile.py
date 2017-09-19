@@ -7,7 +7,7 @@ class BoostMathConan(ConanFile):
     url = "https://github.com/bincrafters/conan-boost-math"
     description = "Please visit http://www.boost.org/doc/libs/1_65_0/libs/libraries.htm"
     license = "www.boost.org/users/license.html"
-    requires =  "Boost.Level8Group/1.65.1@bincrafters/testing"
+    requires =  "Boost.Level8Group/1.65.1@bincrafters/stable"
    
     #This library is part of one or more cyclic dependency groups within Boost.
     
