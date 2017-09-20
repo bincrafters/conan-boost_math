@@ -1,9 +1,9 @@
-from conans import ConanFile, tools, os
+from conans import ConanFile
+
 
 class BoostMathConan(ConanFile):
     name = "Boost.Math"
     version = "1.65.1"
-    short_paths = True
     url = "https://github.com/bincrafters/conan-boost-math"
     description = "Please visit http://www.boost.org/doc/libs/1_65_0/libs/libraries.htm"
     license = "www.boost.org/users/license.html"
