@@ -135,10 +135,3 @@ project.register-id /boost/{0} : $(__name__) ;""".format(lib_short_name))
                 conanfile.cpp_info.includedirs.append(include_dir)
         conanfile.cpp_info.defines.append("BOOST_ALL_NO_LIB=1")
         getattr(conanfile, "package_info_after", lambda:None)()
-
-    @staticmethod
-    def __build_policy_missing__(conanfile):
-        if BoostConanFile.is_in_cycle_group(conanfile) and not BoostConanFile.is_header_only(conanfile):
-            return True
-        else:
-            return conanfile.policy_missing == "missing"
