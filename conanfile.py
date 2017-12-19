@@ -31,6 +31,9 @@ class BoostMathConan(ConanFile):
         self.call_patch("package")
     def package_info(self):
         self.call_patch("package_info")
+    @property
+    def build_policy_missing(self):
+        return self.call_patch("__build_policy_missing__")
     def call_patch(self, method, *args):
         if not hasattr(self, '__boost_conan_file__'):
             try:
