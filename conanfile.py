@@ -3,9 +3,9 @@ from conans import ConanFile
 
 class BoostMathConan(ConanFile):
     name = "Boost.Math"
-    version = "1.65.1"
+    version = "1.66.0"
     requires = \
-        "Boost.Level8Group/1.65.1@bincrafters/testing"
+        "Boost.Level8Group/1.66.0@bincrafters/testing"
     lib_short_names = ["math"]
     is_header_only = False
     is_in_cycle_group = True
@@ -13,9 +13,9 @@ class BoostMathConan(ConanFile):
     # BEGIN
 
     url = "https://github.com/bincrafters/conan-boost-math"
-    description = "Please visit http://www.boost.org/doc/libs/1_65_1"
+    description = "Please visit http://www.boost.org/doc/libs/1_66_0"
     license = "www.boost.org/users/license.html"
-    build_requires = "Boost.Generator/1.65.1@bincrafters/testing"
+    build_requires = "Boost.Generator/1.66.0@bincrafters/testing"
     short_paths = True
     generators = "boost"
     settings = "os", "arch", "compiler", "build_type"
