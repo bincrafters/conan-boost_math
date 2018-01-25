@@ -8,7 +8,8 @@ class BoostMathConan(ConanFile):
     name = "boost_math"
     version = "1.66.0"
     url = "https://github.com/bincrafters/conan-boost_math"
-    
+    author = "Bincrafters <bincrafters@gmail.com>"
+    exports = ["LICENSE.md"]
     lib_short_names = ["math"]
     is_in_cycle_group = True
     is_header_only = False
