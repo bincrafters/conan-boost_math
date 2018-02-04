@@ -6,7 +6,7 @@ from conans import ConanFile, tools
 
 class BoostMathConan(ConanFile):
     name = "boost_math"
-    version = "1.66.0"
+    version = "1.65.1"
     url = "https://github.com/bincrafters/conan-boost_math"
     author = "Bincrafters <bincrafters@gmail.com>"
     exports = ["LICENSE.md"]
@@ -15,8 +15,8 @@ class BoostMathConan(ConanFile):
     is_header_only = False
 
     requires = (
-        "boost_package_tools/1.66.0@bincrafters/testing",
-        "boost_level8group/1.66.0@bincrafters/testing"
+        "boost_package_tools/1.65.1@bincrafters/testing",
+        "boost_level8group/1.65.1@bincrafters/testing"
     )
 
     def package_id_additional(self):
@@ -32,7 +32,7 @@ class BoostMathConan(ConanFile):
     short_paths = True
     generators = "boost"
     settings = "os", "arch", "compiler", "build_type"
-    build_requires = "boost_generator/1.66.0@bincrafters/testing"
+    build_requires = "boost_generator/1.65.1@bincrafters/testing"
 
     def package_id(self):
         getattr(self, "package_id_additional", lambda:None)()
