@@ -11,7 +11,7 @@ class BoostMathConan(ConanFile):
     author = "Bincrafters <bincrafters@gmail.com>"
     exports = ["LICENSE.md"]
     lib_short_names = ["math"]
-    is_in_cycle_group = True
+    level_group = "boost_level8group"
     is_header_only = False
 
     requires = (
