@@ -20,6 +20,7 @@ target_link_libraries(${CMAKE_PROJECT_NAME}
   CONAN_PKG::boost_fusion
   CONAN_PKG::boost_integer
   CONAN_PKG::boost_lambda
+  CONAN_PKG::boost_math
   CONAN_PKG::boost_mpl
   CONAN_PKG::boost_predef
   CONAN_PKG::boost_range
