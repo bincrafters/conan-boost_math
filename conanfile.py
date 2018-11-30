@@ -4,15 +4,11 @@
 from conans import python_requires
 
 
-base = python_requires("boost_base/1.67.0@bincrafters/testing")
+base = python_requires("boost_base/1.68.0@bincrafters/testing")
 
 class BoostMathConan(base.BoostBaseConan):
     name = "boost_math"
     url = "https://github.com/bincrafters/conan-boost_math"
     lib_short_names = ["math"]
-    cycle_group = "boost_level8group"    
-    b2_requires = [
-        "boost_level8group",
-    ]
-
-
+    cycle_group = "boost_cycle_group_b"
+    b2_requires = ["boost_cycle_group_b"]
