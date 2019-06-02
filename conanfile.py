@@ -4,12 +4,9 @@
 from conans import python_requires
 
 
-base = python_requires("boost_base/1.69.0@bincrafters/testing")
+base = python_requires("boost_base/2.0.0@bincrafters/testing")
+
 
 class BoostMathConan(base.BoostBaseConan):
     name = "boost_math"
-    version = "1.69.0"
-    url = "https://github.com/bincrafters/conan-boost_math"
-    lib_short_names = ["math"]
-    cycle_group = "boost_cycle_group_b"
-    b2_requires = ["boost_cycle_group_b"]
+    version = "1.70.0"
